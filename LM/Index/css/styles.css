@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: snow;
+  margin: 0 auto;
+  max-width: 100%;
+  text-decoration: none;
+}
+
+/*******************************************************/
+/* HEADER */
+
+header.cabecera{
+  position: sticky;
+  background-color: #002060;
+  background-attachment: fixed;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+
+  color: whitesmoke;
+  font-size: large;
+
+  padding: 10px 15px;
+
+}
+
+
+/*******************************************************/
+/* NAV */
+.menu {
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  justify-content: space-around;
+  background-color: #5463FF;
+
+}
+.menu a{
+  text-decoration: none;
+}
+.menu>div {
+
+  padding: 20px;
+
+  color: rgb(212, 209, 209);
+  text-align: center;
+  text-decoration: none;
+}
+
+.navMenu {
+  position: relative;
+  display: inline-block;
+}
+
+.navItem a, nav>div>a {
+  color: white;
+  font-weight: bold;
+}
+
+.navMenu:hover .navMenu-Desplegable {
+  display: block;
+}
+
+.navMenu-Desplegable {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.navMenu-Desplegable a:hover {
+  background-color: #FFC300;
+}
+
+.navMenu-Desplegable a {
+  color: #002060;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content2 a {
+  color: #002060;;
+  padding: 24px 32px;
+  text-decoration: none;
+  display: block;
+}
+
+.cabecera a:hover {
+  flex-grow: 1;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  background-color: rgb(212, 209, 209);
+}
+
+/*******************************************************/
+/* MAIN */
+main>section:first-child{
+  padding: 0px;
+}
+
+main > section {
+  padding-left: 5%;
+}
+main section p{
+  font-size: 16px;
+}
+
+/*******************************************************/
+/* ASIDE */
+aside{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+}
+#aside1{
+  background-color: #FFC300;
+  text-align: center;
+  padding: 50px;
+  border-radius: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-decoration: none;
+}
+#aside1 ul{
+  font-size: 18px;
+  text-decoration: none;
+}
+#aside1 li{
+  margin: 6px;
+  text-decoration: none;
+}
+#aside1 > ul > li > a{
+  text-decoration: none;
+  color: #333;
+}
+
+#aside2{
+background-color: #FFC300;
+text-align: center;
+padding: 50px;
+border-radius: 15px;
+
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: 18px;
+margin-right: 18px;
+}
+
+#aside2 table{
+margin: 5px;
+font-size: 18px;
+
+}
+#aside2 td{
+padding: 5px;
+}
+
+#aside2 h3{
+padding: 5px;
+}
+
+/*******************************************************/
+/* FOOTER */
+footer{
+  background-color: #002060;
+  align-items: center;
+}
+footer section{
+
+  padding-top: 5px;
+  padding-bottom: 2px;  
+  padding-left: 10px;
+  padding-right: 10px; 
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+section a img {
+  width: 100%;
+}
+#direccionFooter{
+  padding: 10px 10px; 
+}
+#banner{
+  width: 100%;
+}
+#emailFooter img{
+  width: 3.5%;
+  padding: 5px;
+}
+#emailFooter{
+  padding: 10px 10px; 
+}
+#derechosFooter img{
+  padding: 5px;
+}
+
+
+/************************************************************/
+/*RESPONSIVE*/
+
+/* Mobile */
+.container {
+  display: grid;
+  height: 100vh;
+
+  grid-template-rows: auto auto 1fr auto auto auto;
+  /*gap: 12px;*/
+}
+
+/* Tablet */
+@media (min-width: 720px) {
+
+  /* The header section takes 12 columns*/
+  header {
+    grid-column: 1 / span 12;
+  }
+
+  /* The navigation section also takes 12 columns*/
+  nav {
+    grid-column: 1 / span 12;
+  }
+
+  /* The main section takes 10 columns start from column 3*/
+  main {
+    grid-column: 3 / span 10;
+  }
+
+  /* The sidebar takes 2 columns start from column 1*/
+  aside {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+
+  /* The footer section takes 12 columns start from column 1*/
+  footer {
+    grid-column: 1 / span 12;
+  }
+}
+
+/* Desktop: we will work with a screen that is bigger than 1020px */
+@media (min-width: 1020px) {
+
+  /* The header section takes 12 columns*/
+  header {
+    grid-column: 1 / span 12;
+  }
+
+  /* The navigation section also takes 12 columns*/
+  nav {
+    grid-column: 1 / span 12;
+  }
+
+  /* The main section takes 10 columns start from column 3*/
+  main {
+    grid-column: 1 / span 10;
+  }
+
+  /* The sidebar takes 2 columns start from column 11*/
+  aside {
+    grid-column: 11 / span 2;
+    /*grid-row: 3;*/
+  }
+
+  /* The footer section takes 12 columns start from column 1*/
+  footer {
+    grid-column: 1 / span 12;
+  }
+}

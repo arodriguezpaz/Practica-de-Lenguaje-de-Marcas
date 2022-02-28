@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
+
+*{
+
+    box-sizing: border-box;
+}
+
+body{
+    width: 60%;
+    margin:0px auto;
+}
+
+
+header {
+    color: #002060;
+    
+    background: #002060 url('../img/header-bk.jpg');
+    background-attachment: fixed;
+    /* efecto parallax fijo. La imagen se mantiene fija aunque hga scroll */
+    opacity: 0.95;
+    /*padding: 30px 50px 0px;*/ /* top buttom ejeHorizonal*/
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    justify-content: space-around;
+    background-color: #5463FF;
+  
+  }
+  .menu a{
+    text-decoration: none;
+  }
+  .menu>div {
+  
+    padding: 20px;
+  
+    color: rgb(212, 209, 209);
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .navMenu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .navItem a, nav>div>a {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .navMenu:hover .navMenu-Desplegable {
+    display: block;
+  }
+  
+  .navMenu-Desplegable {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navMenu-Desplegable a:hover {
+    background-color: #FFC300;
+  }
+  
+  .navMenu-Desplegable a {
+    color: #002060;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content2 a {
+    color: #002060;;
+    padding: 24px 32px;
+    text-decoration: none;
+    display: block;
+  }
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #ffcd7c;
+}
+
+li a:active {
+    background-color: #ffc260;
+}
+
+
+
+
+/*CONTENIDO DEL CUERPO, BODY.
+Tipografía:
+@import
+url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap'); |
+Color: #1B1C1E | Tamaño: indiferente */
+main{
+    color: #1B1C1E;
+    font-family: 'Overpass', sans-serif;
+    
+}
+
+
+.logoEscuelaEmbajadora{
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.textParlamento{
+    background-color:#004ba8 ;
+    color: #fff;
+}
+.textParlamento > h1{
+    color: #ffc260;
+    text-align: left;
+    padding-top: 20px;
+    padding: 15px;
+}
+section > p{
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.titulo {
+    padding-left: 15px;
+    
+}
+
+
+.Infopoints > * {
+    padding: 1em;
+}
+
+.Infopoints{
+    background-color: #ffc260;
+}
+.Infopoints > h2{
+    color: #fff;
+    font-style: italic;
+    /*padding-top: 30px;*/
+    padding-bottom: 0;
+    font-size: 50px;
+    text-align: center;
+}
+.Infopoints .ip1{
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+.Infopoints .video{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+
+.infopointBox{
+    background-color:#004ba8;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.actividades .titulo{ 
+    text-align: center;
+    padding-top: 15px;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.cards .card{
+    background: #ECECEC;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #1B1C1E;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+.actividades{
+    background-color: #004ba8;
+    color: #fff;
+}
+
+
+
+.diaEuropa{
+    background-color: #ffc260;
+}
+
+.diaEuropa > h2{
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    font-size: 30px;
+}
+.de1 > h3{
+    padding-left: 15px;
+    color: #fff;
+    text-align: center;
+}
+.video2{
+    padding-left: 100px;
+    padding-right: 80px;
+}
+
+.eurodiputados > h2{
+    color: #ECECEC;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 40px;
+}
+.eurodiputados > p{
+    color: #ECECEC;
+    text-align: center;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+  }
+  
+  
+.contenedorDiputados{
+    background-color: #FFC300;
+    text-align: center;
+}
+
+  .diputado {
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border: #fff;
+  }
+  
+  .diputado_imagen {
+    line-height: 0;
+    overflow: hidden;
+  }
+  
+  .diputado_imagen img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+  }
+  
+  .diputado_nombre {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: black(90,0,10,0.4);
+    color:#fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .diputado:hover .diputado_nombre {
+    opacity: 1;
+  }
+  
+  .diputado:hover .diputado_imagen {
+    filter: blur(2px);
+  }
+  .diputado img {
+    width: 350px; 
+    height: 380px;
+  }
+
+
+/**/
+
+
+/*
+Relleno del footer: Superior: 75px; Inferior: 45px; Resto: 0px; (Distancia entre secciones) |
+Incluir en el footer los logos con links y hacer un embed centrado de la licencia CC BY
+Relleno del footer inferior: Superior: 15px; Inferior: 15px; Resto: 0px; (Distancia entre secciones) |
+Color: #666666
+*/
+footer{
+    background-color: #002060;
+    /*background-image: url('../img/header-bk.jpg');*/
+}
+footer section{
+/*    padding: 75px 45px 0px;*/
+    padding: 20px 20px;    
+    color: #666666;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+section img {
+    width: 15%;
+}
+footer span{
+    display:block;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+
+/*
+background-image:url(https://programaseuropeosiesavellaneda.es/wp-content/uploads/2022/02/header-bk.jpg)
+background-image:url(https://programaseuropeosiesavellaneda.es/wp-content/uploads/2021/05/bandUE.jpg)
+background-image:url(https://programaseuropeosiesavellaneda.es/wp-content/uploads/2021/04/escuela-embajadora.png)
+background-image:url(https://programaseuropeosiesavellaneda.es/wp-content/uploads/2021/05/secc_logEur.png)
+*/
+

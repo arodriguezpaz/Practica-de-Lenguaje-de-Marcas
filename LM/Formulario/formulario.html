@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="/Formulario/css/estilos.css">
+    <!--Iconos usados-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--Icono Logo-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!--Fuente-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container">
+            <header class="cabecera">
+                <img src="img/logo.png" width="25%" />
+                <span>
+                    <h2>DAW - Actividad Evaluable 2º Trimestre</h2>
+                </span>
+                <span id="nombre">Andres Rodriguez Paz</span>
+            </header>
+            <nav class="menu">
+                <div><a href="/Index/index.html">Inicio</a></div>
+
+                <div class="navMenu">
+                    <div class="navItem">
+                        <a href="">Mi Perfil</a>
+                    </div>
+                    <div class=" navMenu-Desplegable">
+                        <a href="/Mi Perfil/perfil.html">Perfil</a>
+                    </div>
+                </div>
+                <div class="navMenu">
+                    <div class="navItem">
+                        <a href="/Parlamento Europeo/Parlamento.html">Parlamento Europeo</a>
+                    </div>
+                    <div class="navMenu-Desplegable">
+                        <a href="/Parlamento Europeo/Parlamento.html #europa">Día de Europa</a>
+                        <a href="/Parlamento Europeo/Parlamento.html #info">Info Points</a>
+                        <a href="/Parlamento Europeo/Parlamento.html #actividades">Actividades</a>
+                    </div>
+                </div>
+
+                <div><a href="/Formulario/formulario.html">Contacto</a></div>
+            </nav>
+            <main>
+
+                <h1 class="titulo">Nuestro <span>Contacto</span></h1>
+
+        <div class="bloqueFormulario">
+            <div class="formulario">
+                <h3>IES Alonso de Avellaneda</h3>
+                <form action="">
+                    <p>
+                        <label for="nombre">Nombre Completo: </label>
+                        <input type="text" name="nombre" required>
+                    </p>
+                    <p>
+                        <label for="email">Dirección de Correo: </label>
+                        <input type="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="telefono">Número de Telefono: </label>
+                        <input type="tel" name="telefono" pattern ="[0-9]{9}" required>
+                    </p>
+                    <p>
+                        <label for="direccion">Dirección: </label>
+                        <input type="text" name="direccion">
+                    </p>
+                    
+                    <p class="block">
+                       <label for="mensaje">Dejanos tu Mensaje: </label> 
+                        <textarea name="mensaje" rows="5" maxlength="1000"></textarea>
+                    </p>
+                    
+
+                    <p>
+                        <input type="radio" name="terminos" required>
+                        <label for="terminos">Acepto los terminos y condiciones</label>
+                        
+                    </p>
+                    
+                    <p>
+                        
+                        <input type="checkbox" name="marketing">
+                        <label for="marketing">Quiero recibir mas informacion sobre el instituto por email</label>
+                        
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="infoInstituto">
+                <h2>IES Alonso de Avellaneda</h2>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> C/ Victoria 3. 28804 Alcalá de Henares, Madrid</li>
+                    <li><i class="fas fa-phone"></i> Tel 91 888 11 74</li>
+                    <li><i class="fas fa-envelope-open-text"></i> ies.alonsodeavellan.alcala@educa.madrid.org</li>
+                </ul>
+            </div>
+        </div>
+            </main>
+
+
+            <footer>
+                <section id="imagenesFooter">
+                    <a href="https://site.educa.madrid.org/ies.alonsodeavellan.alcala/"><img src="img/logo_ifp.png"
+                            alt="Difusion"></a>
+                    <a href="https://www.comunidad.madrid/servicios/educacion/formacion-profesional"><img
+                            src="img/logo_fp.png" alt="Todofp"></a>
+                    <a href="https://programaseuropeosiesavellaneda.es/escuela-embajadora-del-parlame"><img
+                            src="img/logo_escuela-embajadora.png" alt="Todofp"></a>
+                    <a href="https://www.comunidad.madrid/transparencia/unidad-organizativa-responsabl"><img
+                            src="img/logo_cam.png" alt="Todofp"></a>
+                    <a href="https://europa.eu/europass/es"><img src="img/europass-erasmus.png" alt="Todofp"></a>
+                    <a href="http://sepie.es/"><img src="img/sepie-footer.gif" alt="Todofp"></a>
+                </section>
+                <section id="direccionFooter">
+                    <p>IES ALONSO DE AVELLANEDA C/ Victoria 3. 28804 Alcalá de Henares,
+                        Madrid. Tel 91 888 11 74 - Fax: 91 888 34 02
+                    </p>
+                </section>
+                <section id="emailFooter">
+                    <img src="/img/mensaje.jpg" alt="Mensaje">
+                    <p><a
+                            href="mailto:ies.alonsodeavellan.alcala@educa.madrid.org">ies.alonsodeavellan.alcala@educa.madrid.org</a>
+                    </p>
+                </section>
+                <section id="derechosFooter">
+                    <a href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cccomos.png"
+                            alt="Derechos de Autor"></a>
+                    <p>Esta obra está bajo una licencia de Creative Commons Reconociento 4.0 Internacional</p>
+                </section>
+            </footer>
+
+        </div>
+</body>
+
+</html>
